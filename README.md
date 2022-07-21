@@ -1,6 +1,6 @@
 # Overview
 
-This repository describes a custom NodeJs TypeScript project template, that can be used to start a new project with the proper configuration very quickly.
+This repository is a project template for creating a Node.js Telegram bot using TypeScript.
 
 # Project Structure
 The project structure is as follows :
