@@ -1,0 +1,11 @@
+dist/
+node_modules/
+test/
+.eslintcache
+.eslintignore
+.eslintrc.json
+.gitignore
+.npmignore
+jest.config.js
+README.md
+tsconfig.eslint.json

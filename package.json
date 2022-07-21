@@ -1,0 +1,58 @@
+{
+  "name": "nodejs-ts-template",
+  "version": "0.0.2",
+  "description": "Custom NodeJs TypeScript project template.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Samy Ouyahia",
+  "email": "sr.ouyahia@gmail.com",
+  "url": "",
+  "keywords": [
+    "custom",
+    "nodejs",
+    "template",
+    "typescript"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist && mkdirp dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "start": "node dist/index.js | ./node_modules/.bin/bunyan",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint --cache --ext .js,.ts --format=pretty ./src ./test",
+    "lint:fix": "eslint --fix --cache --ext .js,.ts --format=pretty ./src ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/souyahia/nodejs-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/souyahia/nodejs-template/issues"
+  },
+  "homepage": "https://github.com/souyahia/nodejs-template#readme",
+  "private": false,
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "mkdirp": "^1.0.4",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.8",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-formatter-pretty": "^4.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.6.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.7",
+    "typescript": "^4.7.4"
+  }
+}
